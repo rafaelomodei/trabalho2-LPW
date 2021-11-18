@@ -1,0 +1,31 @@
+
+{%extends 'base.html'%}
+
+{%block 'body'%}
+<header>
+    <!-- Colocar a foto de perfil aqui     -->
+
+    {% load static %} <img src="{% static "home/media/perfil.jpg"%}"/>
+    <h1>Rafael G.Omodei</h1>
+    <p>Cursando  Ciência da Computação...</p>
+    <!-- TODO: colocar aqui o link doo git e do linkdin -->
+</header>
+
+
+<footer>
+    
+    <div class="constainer-butons-my-discipline">
+        <p class="p-my-discipline">Disciplinas que estou cursando em <b>2021/2</b></p>
+        <div class="div-butons-my-discipline">
+            <button class="btn-my-discipline">Fundamentos De Sistemas Inteligentes</button>
+            <button class="btn-my-discipline">Linguagens De Programação Para Web</button>
+            <button class="btn-my-discipline">Redes De Computadores 2</button>
+            <button class="btn-my-discipline">Linguagens Formais E Autômatos</button>
+        </div>
+    </div>
+
+
+
+</footer>
+{%endblock%}
+
