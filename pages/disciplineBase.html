@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <link rel="preconnect" href="https://fonts.googleapis.com"/>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;900&display=swap" rel="stylesheet"/>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>{%block 'title' %}{% endblock %}</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+
+    <style>
+
+        body{
+            color: white;
+            background: #12151A;
+            font-style: normal;
+            font-family: 'Roboto', sans-serif;
+            padding: 30px;
+           
+        }
+
+        header {
+            display: flex;
+            flex-direction: column;
+            max-width: 340px;
+            margin: 0px;
+        }
+
+        h1 {
+            text-transform: uppercase;
+            margin: 0;
+            color: #69D788
+        }
+
+        h3{
+            margin: 0;
+        }
+
+        p{
+            margin-top: 5px;
+            font-size: 14px;
+            font-weight: 300;
+        }
+
+        a{
+            width: min-content;
+            margin-bottom: 30px;
+            color: white;
+            text-decoration: none;
+        }
+
+        hr.DividerSolid {
+            border-top: 1px solid #69D788;
+            border-radius: 50;
+            margin-bottom: 10px;
+        }
+
+        .container-text{
+            margin-top: 25px;
+            margin-bottom: 25px;
+        }
+
+    </style>
+</head>
+<body>
+
+    <header>
+        {%block 'linkBack'%} {% endblock %}
+        <h1>{%block 'titleBody'%}{%endblock%}</h1>
+        <p>professor: <b>{%block 'teacherName'%}{%endblock%}</b></p>
+    </header>
+
+    <div class="container-text">
+        <h3>Objetivo</h3>
+        <hr class="DividerSolid">
+        <p>{%block 'textObjetive'%}{%endblock%}</p>
+    </div>
+
+    <div>
+        <h3>Ementa</h3>
+        <hr class="DividerSolid">
+        <p>{%block 'textCourseSyllabus'%}{%endblock%}</p>
+    </div>
+
+</body>
+</html>
