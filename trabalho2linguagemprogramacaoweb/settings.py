@@ -40,6 +40,10 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'home.apps.HomeConfig',
     'disciplineFSI.apps.DisciplinefsiConfig',
+    'disciplineLPW.apps.DisciplinelpwConfig',
+    'disciplineRD2.apps.Disciplinerd2Config',
+    'disciplineLFA.apps.DisciplinelfaConfig',
+
 
 ]
 
