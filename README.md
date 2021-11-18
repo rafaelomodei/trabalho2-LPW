@@ -24,6 +24,7 @@ para cada disciplina tem um app, consequentemente, uma página para essa discipl
 - [x] Utilize boas mensagens de commit
 - [x] Informação de cada disciplina
 - [ ] Redirecionar para outra pagina quando não existir a pagina solicitada
+- [ ] Responsividade
 
 
 ### 🛠 Dependências
